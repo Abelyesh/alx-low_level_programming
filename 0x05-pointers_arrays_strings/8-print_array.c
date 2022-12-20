@@ -20,6 +20,6 @@ void print_array(int *a, int n)
 		{
 			printf("%d", a[cont]);
 		}
-		putchar('\n');
 	}
+	putchar('\n');
 }
