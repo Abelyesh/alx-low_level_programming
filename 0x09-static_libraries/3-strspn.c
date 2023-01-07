@@ -1,10 +1,7 @@
 #include "main.h"
 
 /**
- * *_strspn - description
- * @s: string
- * @accept: pointer
- * Return: int
+ * abel
  */
 
 

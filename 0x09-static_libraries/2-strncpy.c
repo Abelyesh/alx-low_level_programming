@@ -1,10 +1,6 @@
 #include "main.h"
 /**
- * *_strncpy - find the length of a string
- * @dest: pointer to the string
- * @src: pointer
- * @n: int
- * Return: destination
+ * abel
  */
 
 
@@ -17,5 +13,6 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 
 for ( ; i < n; i++)
 	dest[i] = '\0';
+
 return (dest);
 }

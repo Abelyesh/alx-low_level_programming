@@ -1,11 +1,7 @@
 #include "main.h"
 
 /**
- * *_memcpy -  copies memory area from src to dest
- * @dest: destination
- * @src: source
- * @n: max bytes to use
- * Return: dest
+ * abel
  */
 
 

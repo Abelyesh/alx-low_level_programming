@@ -1,26 +1,21 @@
 !<arch>
-0-isupper.c/    0           0     0     644     177       `
+0-isupper.c/    0           0     0     644     91        `
 #include "main.h"
 
 /**
- * _isupper - check for upper case letter
- * @c : character to check the case
- * Return:0 or 1
+ * ajhoa
  */
-int _isupper(int c) 
+
+int _isupper(int c)
 {
 	return (c >= 65 && c <= 90);
 }
 
-0-memset.c/     0           0     0     644     292       `
+0-memset.c/     0           0     0     644     162       `
 #include "main.h"
 
 /**
- * *_memset - fills memory with a constant byte.
- * @s: pointer to put the constant
- * @b: constant
- * @n: max bytes to use
- * Return: s
+ * abel
  */
 
 
@@ -32,16 +27,12 @@ for (i = 0; n > 0 ; i++, n--)
 {
 	s[i] = b;
 }
-
 return (s);
 }
-0-strcat.c/     0           0     0     644     307       `
+0-strcat.c/     0           0     0     644     206       `
 #include "main.h"
 /**
- * *_strcat - concatenates two strings
- * @dest: pointer destination
- * @src: pointer source
- * Return: void
+ * able
  */
 
 char *_strcat(char *dest, char *src)
@@ -58,14 +49,11 @@ do {
 
 return (dest);
 }
-
-100-atoi.c/     0           0     0     644     437       `
+100-atoi.c/     0           0     0     644     348       `
 #include "main.h"
 
 /**
- * _atoi - convert a string to an integer.
- * @s: char type string
- * Return: integer converted
+ * abel
  */
 
 int _atoi(char *s)
@@ -79,7 +67,7 @@ int _atoi(char *s)
 			sign *= -1;
 		}
 	}
-	
+
 	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
 	{
 		resp *= 10;
@@ -88,29 +76,22 @@ int _atoi(char *s)
 
 	return (sign * resp);
 }
-
-1-isdigit.c/    0           0     0     644     158       `
+1-isdigit.c/    0           0     0     644     90        `
 #include "main.h"
 
 /**
- * _isdigit - check for a digit
- * @c : character to check
- * Return:0 or 1
+ * abel
  */
 
 int _isdigit(int c)
 {
 	return (c >= 48 && c <= 57);
 }
-1-memcpy.c/     0           0     0     644     307       `
+1-memcpy.c/     0           0     0     644     186       `
 #include "main.h"
 
 /**
- * *_memcpy -  copies memory area from src to dest
- * @dest: destination
- * @src: source
- * @n: max bytes to use
- * Return: dest
+ * abel
  */
 
 
@@ -125,44 +106,39 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	return (dest);
 }
-
-1-strncat.c/    0           0     0     644     449       `
+1-strncat.c/    0           0     0     644     317       `
 #include "main.h"
 /**
- * *_strncat - concatenates n bytes of two strings
- * @dest: pointer destination
- * @src: pointer source
- * @n: number of bytes
- * Return: void
+ * abel
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
+
 int dest_len, i;
 for (dest_len = 0; dest[dest_len] != '\0'; dest_len++)
 ;
 
 for (i = 0; i < n && src[i] != '\0'; i++)
-dest[dest_len + i] = src[i];
+	dest[dest_len + i] = src[i];
+
 /*should end with a end of string char*/
 dest[dest_len + i] = '\0';
+
 return (dest);
 }
 
-2-strchr.c/     0           0     0     644     287       `
+2-strchr.c/     0           0     0     644     181       `
 #include "main.h"
 
 /**
- * *_strchr - fills memory with a constant byte.
- * @s: pointer to put the constant
- * @c: constant
- * Return: s
+ * abel
  */
 
 char *_strchr(char *s, char c)
 {
 	int i;
-	
+
 	for (i = 0; s[i] >= '\0'  ; i++)
 	{
 		if (s[i] == c)
@@ -174,12 +150,10 @@ char *_strchr(char *s, char c)
 	return ('\0');
 }
 
-2-strlen.c/     0           0     0     644     190       `
+2-strlen.c/     0           0     0     644     103       `
 #include "main.h"
 /**
- * _strlen - find the length of a string
- * @s: pointer to the string to check
- * Return: void
+ * abel
  */
 
 int _strlen(char *s)
@@ -190,14 +164,11 @@ while (s[i])
 
 return (i);
 }
-2-strncpy.c/    0           0     0     644     325       `
+
+2-strncpy.c/    0           0     0     644     208       `
 #include "main.h"
 /**
- * *_strncpy - find the length of a string
- * @dest: pointer to the string
- * @src: pointer
- * @n: int
- * Return: destination
+ * abel
  */
 
 
@@ -210,28 +181,25 @@ for (i = 0; i < n && src[i] != '\0'; i++)
 
 for ( ; i < n; i++)
 	dest[i] = '\0';
+
 return (dest);
 }
-
-3-islower.c/    0           0     0     644     178       `
+3-islower.c/    0           0     0     644     91        `
 #include "main.h"
 
 /**
- * _islower - check for lower case letter
- * @c : character to check the case
- * Return:0 or 1
+ * abel
  */
 
 int _islower(int c)
 {
 	return (c >= 97 && c <= 122);
 }
-3-puts.c/       0           0     0     644     233       `
+
+3-puts.c/       0           0     0     644     133       `
 #include "main.h"
 /**
- * _puts - prints a string, followed by a new line,
- * @str: pointer to the string to print
- * Return: void
+ * abel
  */
 
 
@@ -246,21 +214,18 @@ while (str[i])
 _putchar('\n');
 }
 
-3-strcmp.c/     0           0     0     644     391       `
+3-strcmp.c/     0           0     0     644     214       `
 #include "main.h"
 /**
- * _strcmp - compares two strings
- * @s1: string 1
- * @s2: string 2
- * Return: 0 if matching, and ns1 - ns2 if not matching
+ * abel
  */
+
 int _strcmp(char *s1, char *s2)
 {
 int i;
 
 /**
- * We have reached the end of S1 OR we have reached the end of S2
- * 
+ * abel
  */
 
 for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
@@ -272,15 +237,11 @@ for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 }
 return (0);
 }
-
-3-strspn.c/     0           0     0     644     375       `
+3-strspn.c/     0           0     0     644     308       `
 #include "main.h"
 
 /**
- * *_strspn - description
- * @s: string
- * @accept: pointer
- * Return: int
+ * abel
  */
 
 
@@ -305,14 +266,11 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	return (cmpt);
 }
-
-4-isalpha.c/    0           0     0     644     195       `
+4-isalpha.c/    0           0     0     644     117       `
 #include "main.h"
 
 /**
- * _isalpha - check for lower case letter
- * @c : character to check
- * Return:0 or 1
+ * abel
  */
 
 int _isalpha(int c)
@@ -320,15 +278,11 @@ int _isalpha(int c)
 	return ((c >= 97 && c <= 122) || (c >= 65 && c <= 90));
 }
 
-4-strpbrk.c/    0           0     0     644     484       `
+4-strpbrk.c/    0           0     0     644     272       `
 #include "main.h"
 
 /**
- * _strpbrk - Search a string for any of a set of bytes.
- * @s: string
- * @accept: string to match
- * Return: Pointer to the byte in `s` that matches one of the bytes in `accept`
- * or NULL if no such byte is found.
+ * abel
  */
 
 char *_strpbrk(char *s, char *accept)
@@ -340,7 +294,7 @@ char *_strpbrk(char *s, char *accept)
 	while (s[i] != '\0')
 	{
 		j = 0;
-		while (accept[j] != '\0')
+		while (s[i] != '\0')
 		{
 			if (accept[j] == s[i])
 			{
@@ -351,16 +305,14 @@ char *_strpbrk(char *s, char *accept)
 		}
 		i++;
 	}
+
 	return (0);
 }
-5-strstr.c/     0           0     0     644     426       `
+5-strstr.c/     0           0     0     644     352       `
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strstr - description
- * @haystack: string
- * @needle: pointer
- * Return: pointer
+ * abel
  */
 
 
@@ -376,39 +328,32 @@ for (i = 0; haystack[i] > '\0'; i++)
 		{
 			break;
 		}
-	}
-	if (needle[j - i] == '\0')
-	{
-		return (haystack + i);
+		if (needle[j - i] == '\0')
+		{
+			return (haystack + i);
+		}
 	}
 }
 return (0);
 }
-6-abs.c/        0           0     0     644     149       `
+6-abs.c/        0           0     0     644     88        `
 #include "main.h"
 
 /**
- * * _abs - return abs value
- * @n : number to check
- * Return:0 or 1
+ * abel
  */
+
 int _abs(int n)
 {
 
 return (n >= 0 ? n : n * -1);
 
 }
-
-9-strcpy.c/     0           0     0     644     391       `
+9-strcpy.c/     0           0     0     644     168       `
 #include "main.h"
 
 /**
- * *_strcpy -  copies the string pointed to by src
- * @dest: char type string
- * @src: char type string
- * Description: Copy the string pointed to by pointer `src` to
- * the buffer pointed to by `dest`
- * Return: Pointer to `dest`
+ * abel
  */
 
 char *_strcpy(char *dest, char *src)
@@ -422,4 +367,3 @@ char *_strcpy(char *dest, char *src)
 
 	return (dest);
 }
-

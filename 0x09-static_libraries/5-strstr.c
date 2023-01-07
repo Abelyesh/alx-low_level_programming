@@ -1,10 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_strstr - description
- * @haystack: string
- * @needle: pointer
- * Return: pointer
+ * abel
  */
 
 
@@ -20,10 +17,10 @@ for (i = 0; haystack[i] > '\0'; i++)
 		{
 			break;
 		}
-	}
-	if (needle[j - i] == '\0')
-	{
-		return (haystack + i);
+		if (needle[j - i] == '\0')
+		{
+			return (haystack + i);
+		}
 	}
 }
 return (0);
