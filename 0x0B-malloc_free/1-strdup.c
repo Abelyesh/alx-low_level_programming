@@ -1,7 +1,9 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - concatenates two strings.
+ * _str_concat - concatenates two strings.
+ * @str: string
+ * Return: pointer of an array of chars
  */
 char *str_concat(char *s1, char *s2)
 {
